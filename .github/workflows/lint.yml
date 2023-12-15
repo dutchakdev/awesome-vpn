@@ -26,6 +26,7 @@ jobs:
           check-modified-files-only: 'yes'
           config-file: '.mlc_config.json'
           base-branch: main
+          create-issue: 'yes'
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
