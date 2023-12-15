@@ -18,13 +18,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Run link check
+      - name: Run link check (main branch)
         uses: gaurav-nelson/github-action-markdown-link-check@v1
         with:
           use-quiet-mode: 'no'
           use-verbose-mode: 'yes'
           check-modified-files-only: 'yes'
           config-file: '.mlc_config.json'
+          base-branch: main
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
