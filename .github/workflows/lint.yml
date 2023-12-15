@@ -1,5 +1,5 @@
 ---
-name: Check markdown links
+name: Lint markdown
 on:
   push:
     branches:
