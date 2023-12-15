@@ -17,11 +17,22 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Run link check
+        uses: gaurav-nelson/github-action-markdown-link-check@v1
         with:
-          submodules: recursive
-      - uses: articulate/actions-markdownlint@v1
+          use-quiet-mode: 'no'
+          use-verbose-mode: 'yes'
+          check-modified-files-only: 'yes'
+          config-file: '.mlc_config.json'
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
         with:
-          config: markdownlint-config.json
-          files: '*.md'
-          ignore: node_modules
-          version: 0.28.1
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install -g markdownlint-cli
+
+      - name: Run Markdown Lint
+        run: markdownlint .
