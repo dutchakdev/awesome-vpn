@@ -1,0 +1,30 @@
+name: Bug Report
+description: Report a bug encountered
+labels: ["bug", "pending-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for opening a bug report in [Your Repository Name].
+
+        Before proceeding, please make sure you've read our [contribution guide](https://github.com/dutchakdev/awesome-vpn/blob/main/CONTRIBUTING.md) to understand how you can contribute to our project.
+
+        If you have a feature request or need general assistance, consider visiting [our Forum](https://github.com/dutchakdev/awesome-vpn/discussions).
+
+  - type: checkboxes
+    id: confirm-search
+    attributes:
+      label: Search First
+      description: Please check existing [issues](https://github.com/dutchakdev/awesome-vpn/issues) and the [forum](https://github.com/dutchakdev/awesome-vpn/discussions) before reporting to avoid duplication.
+      options:
+        - label: I searched, and no similar issues were found
+          required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What Happened?
+      description: |
+        Please provide as much information as possible about the issue you encountered. Detailed reports help us address bugs more effectively.
+      validations:
+        required: true

@@ -1,0 +1,7 @@
+contact_links:
+  - name: Feature request
+    url: https://github.com/dutchakdev/awesome-vpn/discussions/new?category=ideas
+    about: Suggest an idea for awesome-vpn
+  - name: Questions & Help
+    url: https://github.com/dutchakdev/awesome-vpn/discussions/new?category=q-a
+    about: Ask a question about awesome-vpn
