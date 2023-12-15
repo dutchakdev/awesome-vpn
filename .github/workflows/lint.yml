@@ -30,8 +30,16 @@ jobs:
           config-file: '.mlc_config.json'
           base-branch: main
           create-issue: 'yes'
+          gh-assignees: 'dutchakdev'
+          gh-lables: 'broken-links'
         env:
           GITHUB_TOKEN: ${{ github.token }}
+  lint:
+    name: Markdown lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
