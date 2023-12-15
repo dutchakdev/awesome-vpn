@@ -10,6 +10,9 @@ on:
     paths:
       - '**.md'
 
+permissions:
+  issues: write
+
 jobs:
   markdown-link-check:
     name: Broken Links
@@ -27,6 +30,8 @@ jobs:
           config-file: '.mlc_config.json'
           base-branch: main
           create-issue: 'yes'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
