@@ -3,7 +3,7 @@ name: Check markdown links
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - '**.md'
   pull_request:
