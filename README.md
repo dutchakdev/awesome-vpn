@@ -18,7 +18,7 @@
 - [License](#license)
 
 ---
-  
+   
 ### VPN Servers
 - [Algo VPN](https://github.com/trailofbits/algo) - Personal IPSEC VPN setup.
 - [Firezone](https://github.com/firezone/firezone) - WireGuard-based VPN server and firewall.
