@@ -2,6 +2,8 @@
 
 🌐 A curated list of awesome VPN frameworks, libraries, software, and resources focusing on open-source and innovative solutions.
 
+[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://vshymanskyy.github.io/StandWithUkraine/)
+
 ---
 
 ## Contents
