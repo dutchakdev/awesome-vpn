@@ -31,7 +31,7 @@ jobs:
           base-branch: main
           create-issue: 'yes'
           gh-assignees: 'dutchakdev'
-          gh-lables: 'broken-links'
+          gh-labels: 'broken-links'
         env:
           GITHUB_TOKEN: ${{ github.token }}
   lint:
