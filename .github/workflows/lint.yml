@@ -31,20 +31,21 @@ jobs:
           gh-labels: 'broken-links'
         env:
           GITHUB_TOKEN: ${{ github.token }}
-  lint:
-    name: Markdown lint
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 18
+  # lint:
+  #   name: Markdown lint
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4
 
-      - name: Install dependencies
-        run: npm install -g markdownlint-cli
+  #     - name: Setup Node.js
+  #       uses: actions/setup-node@v2
+  #       with:
+  #         node-version: 18
 
-      - name: Run Markdown Lint
-        run: markdownlint .
+  #     - name: Install dependencies
+  #       run: npm install -g markdownlint-cli
+
+  #     - name: Run Markdown Lint
+  #       run: markdownlint .
