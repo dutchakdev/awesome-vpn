@@ -1,5 +1,5 @@
 ---
-name: Check markdown links
+name: Lint markdown
 on:
   push:
     branches:
@@ -10,6 +10,9 @@ on:
     paths:
       - '**.md'
 
+permissions:
+  issues: write
+
 jobs:
   markdown-link-check:
     name: Broken Links
@@ -17,11 +20,34 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Run link check (main branch)
+        uses: dutchakdev/markdown-links-action@main
         with:
-          submodules: recursive
-      - uses: articulate/actions-markdownlint@v1
-        with:
-          config: markdownlint-config.json
-          files: 'docs/**/*.md'
-          ignore: node_modules
-          version: 0.28.1
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.repository }}
+          check-modified-files-only: 'yes'
+          base-branch: main
+          create-issue: 'yes'
+          gh-assignees: 'dutchakdev'
+          gh-labels: 'broken-links'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+
+  # lint:
+  #   name: Markdown lint
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4
+
+  #     - name: Setup Node.js
+  #       uses: actions/setup-node@v2
+  #       with:
+  #         node-version: 18
+
+  #     - name: Install dependencies
+  #       run: npm install -g markdownlint-cli
+
+  #     - name: Run Markdown Lint
+  #       run: markdownlint .

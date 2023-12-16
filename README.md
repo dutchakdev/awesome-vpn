@@ -5,7 +5,7 @@
 [![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://vshymanskyy.github.io/StandWithUkraine/)
 
 ---
-
+  
 ## Contents
 - [VPN Servers](#vpn-servers)
 - [VPN Clients](#vpn-clients)
@@ -18,7 +18,7 @@
 - [License](#license)
 
 ---
-
+   
 ### VPN Servers
 - [Algo VPN](https://github.com/trailofbits/algo) - Personal IPSEC VPN setup.
 - [Firezone](https://github.com/firezone/firezone) - WireGuard-based VPN server and firewall.

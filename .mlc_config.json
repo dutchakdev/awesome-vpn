@@ -9,5 +9,6 @@
     "aliveStatusCodes": [
         200,
         429
-    ]
+    ],
+    "base-branch": "main"
 }
