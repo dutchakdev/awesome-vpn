@@ -22,12 +22,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run link check (main branch)
-        uses: dutchakdev/github-action-markdown-link-check@master
+        uses: dutchakdev/markdown-links-action@master
         with:
-          use-quiet-mode: 'no'
-          use-verbose-mode: 'yes'
           check-modified-files-only: 'yes'
-          config-file: '.mlc_config.json'
           base-branch: main
           create-issue: 'yes'
           gh-assignees: 'dutchakdev'
