@@ -40,4 +40,4 @@ body:
       description: If applicable, add screenshots to help explain your problem.
       placeholder: ex. xxxx
     validations:
-      required: true
+      required: false
