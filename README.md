@@ -40,6 +40,7 @@
 - [wg-ui](https://github.com/EmbarkStudios/wg-ui) - WireGuard user interface.
 - [Drago](https://github.com/seashell/drago) - Connects devices with WireGuard.
 - [Cunicu](https://github.com/cunicu/cunicu) - WireGuard configuration manager.
+- [Caspian-BYOC](https://github.com/Iman/caspian) - Self-hosted WiFi gateway that shares an Xray proxy tunnel with every device on the hotspot.
 
 ### VPN Services
 - [Tailscale](https://github.com/tailscale/tailscale) - Zero-config VPN using WireGuard.
