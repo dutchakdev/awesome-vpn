@@ -43,6 +43,7 @@
 
 ### VPN Services
 - [Tailscale](https://github.com/tailscale/tailscale) - Zero-config VPN using WireGuard.
+- [Tunnet](https://github.com/tunnetio/Tunnet) - Open-source private mesh networking with self-hosted control plane, public tunnels, and identity SSH (QUIC/iroh).
 - [MASQ Node](https://github.com/MASQ-Project/Node) - VPN with a decentralized blockchain.
 
 ### Alternatives to VPN
