@@ -32,6 +32,7 @@
 - [Tunnelblick](https://tunnelblick.net) - Free, open-source VPN client for macOS.
 - [Wireguard-bot](https://github.com/PheeZz/wireguard-bot) - Telegram bot for WireGuard configurations.
 - [Mullvad VPN App](https://github.com/mullvad/mullvadvpn-app) - Secure and easy-to-use VPN client.
+- [Orden](https://github.com/tsyrenov1987/orden-android-client) - Open-source Android VPN client on the sing-box core: VLESS-Reality and Hysteria2 with automatic failover, no logs.
 
 ### VPN Configuration and Management
 - [WGDashboard](https://github.com/donaldzou/WGDashboard) - Web interface for WireGuard.
