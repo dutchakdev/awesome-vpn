@@ -22,11 +22,13 @@
 ### VPN Servers
 - [Algo VPN](https://github.com/trailofbits/algo) - Personal IPSEC VPN setup.
 - [Firezone](https://github.com/firezone/firezone) - WireGuard-based VPN server and firewall.
+- [Husarnet](https://github.com/husarnet/husarnet) - Low latency VPN for robotics and IoT.
+- [loft](https://github.com/a3app/loft) - HTTPS-shaped overlay: GET/WS/H2/QUIC/H3 mux with ChaCha20-Poly1305.
 - [Pritunl](https://github.com/pritunl/pritunl) - Enterprise distributed VPN server.
 - [VpnCloud](https://github.com/dswd/vpncloud) - Extendable virtual private networks.
-- [Husarnet](https://github.com/husarnet/husarnet) - Low latency VPN for robotics and IoT.
 
 ### VPN Clients
+- [loft](https://github.com/a3app/loft) - macOS app, Linux/macOS CLI, iOS, Android, Keenetic for the loft overlay.
 - [OpenVPN](https://openvpn.net) - Secure VPN client and server software.
 - [Pritunl Client](https://client.pritunl.com) - Client for Pritunl VPN servers.
 - [Tunnelblick](https://tunnelblick.net) - Free, open-source VPN client for macOS.
